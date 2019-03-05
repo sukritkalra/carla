@@ -1,3 +1,7 @@
+## Next Release
+
+  * Added playback speed (slow/fast motion) for the replayer
+
 ## CARLA 0.9.4
 
   * Added recording and playback functionality
