@@ -55,7 +55,8 @@ void ACarlaPlayerState::RegisterCollision(
     AActor * /*Actor*/,
     AActor * /*OtherActor*/,
     const FVector &NormalImpulse,
-    const FHitResult &Hit)
+    const FHitResult &Hit/*,
+    float DeltaTime*/)
 {
   switch (ATagger::GetTagOfTaggedComponent(*Hit.Component)) {
     case ECityObjectLabel::Vehicles:

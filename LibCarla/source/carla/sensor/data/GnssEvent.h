@@ -20,11 +20,12 @@ namespace data {
 
     explicit GnssEvent(
         size_t frame_number,
+        double timestamp,
         const rpc::Transform &sensor_transform,
         double lat,
         double lon,
         double alt)
-      : SensorData(frame_number, sensor_transform),
+      : SensorData(frame_number, timestamp, sensor_transform),
         _lat(std::move(lat)),
         _lon(std::move(lon)),
         _alt(std::move(alt)) {}

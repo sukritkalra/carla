@@ -146,6 +146,7 @@ namespace client {
 
       return MakeShared<sensor::data::GnssEvent>(
                timestamp.frame_count,
+               timestamp.elapsed_seconds,
                GetTransform(),
                current_lat,
                current_lon,
